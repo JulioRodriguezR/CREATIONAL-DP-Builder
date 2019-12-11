@@ -47,6 +47,9 @@ public class Persona {
 			persona.edad = edad;
 			return new Persona.BuilderMenor(persona);
 		}
+		
+		// Build no se ha de realizar aquí, ya que en este momento el obj build esta incompleto
+
 	}
 	
 	
