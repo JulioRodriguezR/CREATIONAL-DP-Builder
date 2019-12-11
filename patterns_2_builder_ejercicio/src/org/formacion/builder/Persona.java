@@ -12,7 +12,8 @@ public class Persona {
 	private Persona() {}
 	
 	/*
-	 * Builder genérico
+	 * Builder genérico,
+	 * iniciar la construcción de una Persona
 	 * 
 	 * */
 	public static class Builder {
@@ -53,13 +54,14 @@ public class Persona {
 	
 		private Persona persona;
 		
-		// Al igual que el tipo Persona, el poder ingresar en un Builder mayor/menor ha de requirir el proceso de construcción estandar
+		// Al igual que el tipo Persona, 
+		// el poder ingresar en un Builder mayor/menor ha de requirir el proceso de construcción estandar
 		private BuilderMayor(Persona persona) {
 			this.persona = persona;
 		}
 		
-		public BuilderMayor setLugarTrabajo(String trabajo) {
-			persona.lugarTrabajo = trabajo;
+		public BuilderMayor setLugarTrabajo(String lugartrabajo) {
+			persona.lugarTrabajo = lugartrabajo;
 			return this;
 		}
 		
